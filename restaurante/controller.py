@@ -27,7 +27,7 @@ def index():
         else:
             cookie.append(id)
 
-    # Renderizando com lista de pratos e carrinho
+
     resp = make_response(render_template("index.html", 
                                          listapratos=listaPratos, 
                                          carrinho=cookie))
