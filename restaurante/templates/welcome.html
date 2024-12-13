@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3; url={{ url_for('prato.user') }}">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>    
+  <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-drumstick-bite"></i>Fogo & Brasa</a>
+        <nav class="navbar">
+            <a href="{{ url_for('prato.index') }}">Home</a>
+            <a href="#">sobre</a>
+            <a href="{{ url_for('prato.logout') }}">Logout</a>
+            <a href="{{ url_for('prato.index') }}">Menu</a>
+        </nav>
+        <div id="menu" class="fas fa-bars"></div>
+    </header>
+<body>
+    <main>
+        <div class="heading-title" style="background: url(static/images/sub-header.jpg) no-repeat;">
+            <h1>Bem-vindo</h1>
+        </div>
+    
+        <section class="booking">
+        <h1>{{ message }}</h1>
+        <p>Olá, {{ username }}!</p>
+        <p>Você será redirecionado para a página do {{username}} em 3 segundos...</p>
+    </main>
+</body>
+</html>
