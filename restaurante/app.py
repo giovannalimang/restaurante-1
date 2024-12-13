@@ -8,7 +8,7 @@ app = Flask(__name__)
 userRepository = UserRepository()
 app.secret_key = 'sua_chave_secreta_aqui' 
 
-app.register_blueprint(prato_controllers)
+app.register_blueprint(prato_controllers).
 
 
 if __name__ == "__main__":
